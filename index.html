@@ -1,0 +1,406 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="DMC Logistic - Asesoría Logística Integral. Empresa fundada en 1971 con alcance nacional e internacional en logística integral."
+    />
+    <title>DMC Logistic – Asesoría Logística Integral</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- ======================== NAVBAR ======================== -->
+    <header id="navbar">
+      <nav class="nav-container">
+        <a href="#home" class="nav-logo" data-scroll="home">
+          <img src="assets/logo.png" alt="DMC Logistic" class="logo-img" />
+        </a>
+
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <img
+            src="assets/bf2d423e9a1c8b6925ba60a5d334979417bf0ff1.png"
+            alt="Menu"
+          />
+        </button>
+
+        <div class="menu-overlay" id="menuOverlay"></div>
+        <ul class="nav-links" id="navLinks">
+          <li>
+            <a href="#home" data-scroll="home" data-i18n="nav.home">HOME</a>
+          </li>
+          <li>
+            <a href="#about" data-scroll="about" data-i18n="nav.about"
+              >SOBRE NOSOTROS</a
+            >
+          </li>
+          <li>
+            <a href="#services" data-scroll="services" data-i18n="nav.services"
+              >SERVICIOS</a
+            >
+          </li>
+          <li>
+            <a href="#contact" data-scroll="contact" data-i18n="nav.contact"
+              >CONTACTO</a
+            >
+          </li>
+          <li>
+            <button
+              class="lang-btn"
+              id="langToggle"
+              aria-label="Toggle language"
+            >
+              <span id="langFlag">🇪🇸</span>
+              <span id="langCode">ES</span>
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- ======================== HERO CAROUSEL ======================== -->
+    <section id="home" class="hero-section">
+      <div class="swiper hero-swiper">
+        <div class="swiper-wrapper">
+          <!-- Slide 1 -->
+          <div
+            class="swiper-slide hero-slide"
+            style="
+              background-image: url(&quot;assets/32a71f59c6cc1ea42d1168ffb4feeeb6f3960b5d.png&quot;);
+            "
+          >
+            <div class="hero-overlay"></div>
+
+            <div class="hero-content">
+              <p class="hero-tag" data-i18n="hero.tag">Logistics</p>
+              <h1 class="hero-title" data-i18n="hero.title">
+                ASESORÍA LOGÍSTICA INTEGRAL
+              </h1>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div
+            class="swiper-slide hero-slide"
+            style="
+              background-image: url(&quot;assets/caf228270feab2c1e4c0bc5548255a45033f4790.png&quot;);
+            "
+          >
+            <div class="hero-overlay"></div>
+
+            <div class="hero-content">
+              <p class="hero-tag" data-i18n="hero.tag2">Delivery</p>
+              <h1 class="hero-title" data-i18n="hero.title2">
+                TRANSPORTE INTERNACIONAL
+              </h1>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div
+            class="swiper-slide hero-slide"
+            style="
+              background-image: url(&quot;assets/c4cca9e0d668dc25a3fa43185711a6f8adb7dafa.png&quot;);
+            "
+          >
+            <div class="hero-overlay"></div>
+
+            <div class="hero-content">
+              <p class="hero-tag" data-i18n="hero.tag3">Management</p>
+              <h1 class="hero-title" data-i18n="hero.title3">
+                CONSOLIDADORES DE CARGA
+              </h1>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination hero-pagination"></div>
+      </div>
+    </section>
+
+    <!-- ======================== SOBRE NOSOTROS ======================== -->
+    <section id="about" class="about-section">
+      <div class="about-container">
+        <div class="about-text">
+          <div class="section-label-wrap">
+            <h2 class="section-title front-title" data-i18n="about.title">
+              <span class="title-small">SOBRE</span><br /><span class="title-large">NOSOTROS</span>
+            </h2>
+          </div>
+          <p data-i18n="about.p1">
+            Somos una empresa fundada en 1971 con alcance nacional e
+            internacional en logística integral, con sucursales en los
+            principales puertos y aeropuertos del país.
+          </p>
+          <p data-i18n="about.p2">
+            Nuestra mayor fortaleza son nuestros colaboradores cuya trayectoria,
+            experiencia y actitud de servicio nos capacita para brindarle al
+            cliente una asesoría que en conjunto nos permita desarrollar e
+            implementar propuestas de valor que se adapten a las necesidades de
+            cada negocio para el alcance de tres objetivos estratégicos:
+            Eficiencia, Lead time y Rentabilidad.
+          </p>
+        </div>
+        <div class="about-image"></div>
+        <img
+          src="assets/fdde628d86870e994cb51d2a4d5452183efb7398.png"
+          alt="Decoration"
+          class="about-img-bg"
+          loading="lazy"
+        />
+        <div class="about-img-front">
+          <img
+            src="assets/9c326468a2539ffd7384175612fd2abc5cd5ec92.png"
+            alt="Team"
+            loading="lazy"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================== SERVICIOS ======================== -->
+    <section id="services" class="services-section">
+      <div class="services-bg-logo">DMC<br />LOGISTIC</div>
+      <div class="services-container">
+        <div class="services-list-wrap">
+          <div class="section-label-wrap">
+            <h2
+              class="section-title front-title white"
+              data-i18n="services.title"
+            >
+              SERVICIOS
+            </h2>
+          </div>
+          <ul class="services-list">
+            <li>
+              <img src="assets/ad2d07e71fb91ad9be48a480ee7a081153ff4f63.png" class="check-icon" alt="Check" />
+              <span data-i18n="services.s1"
+                >Agenciamiento aduanal a nivel nacional.</span
+              >
+            </li>
+            <li>
+              <img src="assets/ad2d07e71fb91ad9be48a480ee7a081153ff4f63.png" class="check-icon" alt="Check" />
+              <span data-i18n="services.s2"
+                >Logística de importación y exportación.</span
+              >
+            </li>
+            <li>
+              <img src="assets/ad2d07e71fb91ad9be48a480ee7a081153ff4f63.png" class="check-icon" alt="Check" />
+              <span data-i18n="services.s3"
+                >Logística integral de comercio internacional.</span
+              >
+            </li>
+            <li>
+              <img src="assets/ad2d07e71fb91ad9be48a480ee7a081153ff4f63.png" class="check-icon" alt="Check" />
+              <span data-i18n="services.s4"
+                >Asesoría en clasificación arancelaria, valoración y regímenes
+                legales.</span
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================== CONTACTO ======================== -->
+    <section class="contact-section">
+      <div class="services-container">
+        <div id="contact" class="contact-card">
+          <div class="contact-card-left">
+            <img
+              src="assets/4c02b4c755b40ab9757eedf860b4ae1326fe53aa.png"
+              alt="Contact Form Image"
+              loading="lazy"
+            />
+          </div>
+          <div class="contact-card-right">
+            <h3 data-i18n="contact.title">¡CONTÁCTANOS!</h3>
+            <form id="contactForm">
+              <div class="form-group">
+                <input
+                  type="text"
+                  id="fname"
+                  name="name"
+                  data-i18n-placeholder="contact.name"
+                  placeholder="Nombre y Apellido"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="email"
+                  id="femail"
+                  name="email"
+                  data-i18n-placeholder="contact.email"
+                  placeholder="Correo electrónico"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <textarea
+                  id="fmessage"
+                  name="message"
+                  data-i18n-placeholder="contact.message"
+                  placeholder="Mensaje"
+                  rows="4"
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="btn-send" data-i18n="contact.send">
+                Enviar
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================== LOCATIONS CAROUSEL ======================== -->
+    <section class="locations-section">
+      <img src="assets/54699df56a1a8f65f239b8244394a0e33acf6c3b.png" class="locations-bg" alt="Locations Background" />
+      <div class="locations-container">
+        <div class="swiper locations-swiper">
+          <div class="swiper-wrapper">
+            <!-- Card: Caracas -->
+            <div class="swiper-slide location-card">
+              <div class="location-header">
+                <h3 class="location-name" data-i18n="loc.caracas">CARACAS</h3>
+              </div>
+              <div class="location-body">
+                <div class="location-map">
+                  <img
+                    src="assets/caracas.png"
+                    alt="Map of Caracas"
+                    loading="lazy"
+                  />
+                </div>
+                <p class="location-address" data-i18n="loc.caracas.addr">
+                  Calle Primera, con Avenida Francisco de Miranda, Edificio
+                  Parque Cristal, Los Palos Grandes, Piso 13 Ofic 13-5, Caracas
+                  CP 1060
+                </p>
+              </div>
+            </div>
+
+            <!-- Card: La Guaira -->
+            <div class="swiper-slide location-card">
+              <div class="location-header">
+                <h3 class="location-name" data-i18n="loc.laguaira">
+                  LA GUAIRA
+                </h3>
+              </div>
+              <div class="location-body">
+                <div class="location-map">
+                  <img
+                    src="assets/laguaira.png"
+                    alt="Map of La Guaira"
+                    loading="lazy"
+                  />
+                </div>
+                <p class="location-address" data-i18n="loc.laguaira.addr">
+                  Centro Empresarial Puerta del Sol, Av. Domingo del Rosario,
+                  Parroquia Maiquetía, Municipio Vargas Edo La Guaira
+                </p>
+              </div>
+            </div>
+
+            <!-- Card: Puerto Cabello -->
+            <div class="swiper-slide location-card">
+              <div class="location-header">
+                <h3 class="location-name" data-i18n="loc.puertocabello">
+                  PUERTO CABELLO
+                </h3>
+              </div>
+              <div class="location-body">
+                <div class="location-map">
+                  <img
+                    src="assets/puertocabello.png"
+                    alt="Map of Puerto Cabello"
+                    loading="lazy"
+                  />
+                </div>
+                <p class="location-address" data-i18n="loc.puertocabello.addr">
+                  Edif Distribuidora Madeira, calle Puerto Cabello, Piso 2 No.
+                  2, Parroquia Juan José Flores, CP 2050
+                </p>
+              </div>
+            </div>
+          </div>
+          <button
+            class="swiper-button-prev loc-prev"
+            aria-label="Previous"
+          ></button>
+          <button
+            class="swiper-button-next loc-next"
+            aria-label="Next"
+          ></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================== FOOTER ======================== -->
+    <footer class="footer">
+      <div class="footer-globe">
+        <img src="assets/dfc39c8f4bc617d7c10bd7eb1544294bb4ca5679.png" alt="Globe Background" />
+      </div>
+      <div class="footer-container">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <img src="assets/Variaciones del logo-04 2.png" alt="DMC Logistic" class="logo-img" />
+          </div>
+          <div class="footer-contacts">
+            <div class="footer-contact-item">
+              <img src="assets/754ccc6baca65abd335a57ff0c473d6ffadefa09.png" class="footer-icon" alt="Phone" />
+              <p>+58 212 2838681</p>
+            </div>
+            <div class="footer-contact-item">
+              <img src="assets/754ccc6baca65abd335a57ff0c473d6ffadefa09.png" class="footer-icon" alt="Phone" />
+              <p>+58 424 2001874</p>
+            </div>
+          </div>
+          <div class="footer-address">
+            <div class="footer-contact-item">
+              <img src="assets/169b2fd028f83932a1a3b6dabe31659cfd774059.png" class="footer-icon" alt="Location" />
+              <p data-i18n="footer.address">
+                Caracas, Venezuela, Los Palos Grandes, Torre Parque Cristal.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-bottom-container">
+          <div class="footer-links">
+            <a href="#" data-i18n="footer.terms">Team &amp; Condition</a>
+            <a href="#" data-i18n="footer.privacy">Privacy Policy</a>
+          </div>
+          <div class="footer-copy">
+            <p data-i18n="footer.copy">© DMC Logistics All Rigths Reserved</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Main JS -->
+    <script src="main.js"></script>
+  </body>
+</html>

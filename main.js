@@ -51,7 +51,7 @@ const i18n = {
       "Edif Distribuidora Madeira, calle Puerto Cabello, Piso 2 No. 2, Parroquia Juan José Flores, CP 2050",
 
     "footer.address":
-      "Caracas, Venezuela, Los Palos Grandes, Torre Parque Cristal.",
+      "Dirección: Av Francisco de Miranda, Torre Parque Cristal, Los Palos Grandes, Caracas, Venezuela",
     "footer.terms": "Team & Condition",
     "footer.privacy": "Privacy Policy",
     "footer.copy": "© DMC Logistics All Rights Reserved",
@@ -93,16 +93,16 @@ const i18n = {
 
     "loc.caracas": "CARACAS",
     "loc.caracas.addr":
-      "Primera Street, Francisco de Miranda Avenue, Parque Cristal Building, Los Palos Grandes, Floor 13 Office 13-5, Caracas CP 1060",
+      "Calle Primera, con Avenida Francisco de Miranda, Edificio Parque Cristal, Los Palos Grandes, Piso 13 Ofic 13-5, Caracas CP 1060",
     "loc.laguaira": "LA GUAIRA",
     "loc.laguaira.addr":
-      "Puerta del Sol Business Center, Av. Domingo del Rosario, Maiquetía Parish, Vargas Municipality, La Guaira State",
+      "Centro Empresarial Puerta del Sol, Av. Domingo del Rosario, Parroquia Maiquetía, Municipio Vargas Edo La Guaira",
     "loc.puertocabello": "PUERTO CABELLO",
     "loc.puertocabello.addr":
-      "Madeira Distributor Building, Puerto Cabello Street, Floor 2 No. 2, Juan José Flores Parish, CP 2050",
+      "Edif Distribuidora Madeira, calle Puerto Cabello, Piso 2 No. 2, Parroquia Juan José Flores, CP 2050",
 
     "footer.address":
-      "Caracas, Venezuela, Los Palos Grandes, Torre Parque Cristal.",
+      "Dirección: Av Francisco de Miranda, Torre Parque Cristal, Los Palos Grandes, Caracas, Venezuela",
     "footer.terms": "Terms & Conditions",
     "footer.privacy": "Privacy Policy",
     "footer.copy": "© DMC Logistics All Rights Reserved",
@@ -280,6 +280,7 @@ document
     const email = document.getElementById("femail").value;
     const message = document.getElementById("fmessage").value;
 
+    const formattedMessage = message.replace(/\n/g, '<br>');
     // Plantilla HTML con los datos del formulario, usando tablas para máxima compatibilidad
     const htmlBody = `
     <!DOCTYPE html>
@@ -290,15 +291,15 @@ document
       <title>Nuevo Mensaje de Contacto</title>
     </head>
     <body style="margin: 0; padding: 0; background-color: #f3f6f9; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, Arial; color: #334155; -webkit-font-smoothing: antialiased;">
-      <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color: #f3f6f9; padding: 50px 15px;">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color: #f3f6f9;">
         <tr>
-          <td align="center">
+          <td align="center" style="padding: 50px 15px;">
             <!-- Main Card Container -->
             <table width="600" cellpadding="0" cellspacing="0" border="0" style="background-color: #ffffff; border-radius: 12px; overflow: hidden; box-shadow: 0 10px 25px rgba(0,0,0,0.05); border: 1px solid #e2e8f0;">
               
               <!-- Top Accent Bar -->
               <tr>
-                <td style="background: linear-gradient(90deg, #1a5aad 0%, #52c7e2 100%); height: 6px; font-size: 1px; line-height: 1px;">&nbsp;</td>
+                <td style="background: linear-gradient(90deg, #1a5aad 0%, #52c7e2 100%); height: 6px; font-size: 1px; line-height: 1px; background-color: #1a5aad;">&nbsp;</td>
               </tr>
 
               <!-- Header -->
@@ -321,22 +322,26 @@ document
                   <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color: #f8fafc; border-radius: 8px; border: 1px solid #e2e8f0; margin-bottom: 30px;">
                     <tr>
                       <td style="padding: 18px 20px; border-bottom: 1px solid #e2e8f0;">
-                        <span style="font-size: 12px; color: #64748b; text-transform: uppercase; letter-spacing: 0.8px; font-weight: 700; display: block; margin-bottom: 4px;">Nombre Completo</span>
+                        <span style="font-size: 12px; color: #64748b; text-transform: uppercase; letter-spacing: 0.8px; font-weight: 700;">NOMBRE COMPLETO</span><br>
                         <span style="font-size: 16px; color: #0d2942; font-weight: 600;">${name}</span>
                       </td>
                     </tr>
                     <tr>
                       <td style="padding: 18px 20px; border-bottom: 1px solid #e2e8f0;">
-                        <span style="font-size: 12px; color: #64748b; text-transform: uppercase; letter-spacing: 0.8px; font-weight: 700; display: block; margin-bottom: 4px;">Correo Electrónico</span>
+                        <span style="font-size: 12px; color: #64748b; text-transform: uppercase; letter-spacing: 0.8px; font-weight: 700;">CORREO ELECTRÓNICO</span><br>
                         <a href="mailto:${email}" style="font-size: 16px; color: #1a5aad; font-weight: 600; text-decoration: none;">${email}</a>
                       </td>
                     </tr>
                     <tr>
                       <td style="padding: 18px 20px;">
-                        <span style="font-size: 12px; color: #64748b; text-transform: uppercase; letter-spacing: 0.8px; font-weight: 700; display: block; margin-bottom: 10px;">Mensaje</span>
-                        <div style="font-size: 15px; color: #334155; line-height: 1.7; background: #ffffff; padding: 16px; border-left: 4px solid #1a5aad; border-radius: 4px;">
-                          <span style="white-space: pre-wrap;">${message}</span>
-                        </div>
+                        <span style="font-size: 12px; color: #64748b; text-transform: uppercase; letter-spacing: 0.8px; font-weight: 700;">MENSAJE</span><br><br>
+                        <table width="100%" cellpadding="16" cellspacing="0" border="0" style="background-color: #ffffff; border-left: 4px solid #1a5aad; border-radius: 4px;">
+                          <tr>
+                            <td style="font-size: 15px; color: #334155; line-height: 1.7; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, Arial;">
+                              ${formattedMessage}
+                            </td>
+                          </tr>
+                        </table>
                       </td>
                     </tr>
                   </table>
@@ -345,7 +350,13 @@ document
                   <table width="100%" cellpadding="0" cellspacing="0" border="0">
                     <tr>
                       <td align="center">
-                        <a href="mailto:${email}?subject=RE: Mensaje desde sitio web de DMC Logistic" style="display: inline-block; background-color: #0d2942; color: #ffffff; font-size: 15px; font-weight: 600; text-decoration: none; padding: 14px 32px; border-radius: 6px; box-shadow: 0 4px 6px rgba(13,41,66,0.2);">Responder al Cliente</a>
+                        <table border="0" cellspacing="0" cellpadding="0" align="center">
+                          <tr>
+                            <td align="center" style="background-color: #0d2942; border-radius: 6px;">
+                              <a href="mailto:${email}?subject=RE: Mensaje desde sitio web de DMC Logistic" style="display: inline-block; background-color: #0d2942; color: #ffffff; font-size: 15px; font-weight: 600; text-decoration: none; padding: 14px 32px; border-radius: 6px;">Responder al Cliente</a>
+                            </td>
+                          </tr>
+                        </table>
                       </td>
                     </tr>
                   </table>

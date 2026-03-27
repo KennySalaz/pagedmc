@@ -49,6 +49,21 @@ const i18n = {
     "loc.puertocabello": "PUERTO CABELLO",
     "loc.puertocabello.addr":
       "Edif Distribuidora Madeira, calle Puerto Cabello, Piso 2 No. 2, Parroquia Juan José Flores, CP 2050",
+    "loc.puertosucre": "PUERTO SUCRE",
+    "loc.puertosucre.addr":
+      "Edificio administrativo Rio Manzanares, PB, Puerto Pesquero de Cumaná, Cumana; Estado Sucre. CP 6101",
+    "loc.puertoguiria": "PUERTO GÜIRIA",
+    "loc.puertoguiria.addr":
+      "Calle Bolívar, Edificio Don Antonio, Local 01, Sector Centro, Güiria, Estado Sucre.",
+    "loc.sanantonio": "SAN ANTONIO",
+    "loc.sanantonio.addr":
+      "Carrera 6 entre calle 3 y 4 Nº 3-35 Edificio K&G, Piso 1, Ofic 101, Barrio Lagunitas, San Antonio, Edo Táchira, CP 5007.",
+    "loc.maracaibo": "MARACAIBO",
+    "loc.maracaibo.addr":
+      "Av. 4 Edf Paulina Pierina, PB, Sector Bella Vista, Maracaibo, Estado Zulia, CP 4002.",
+    "loc.puertoguanta": "PUERTO GUANTA",
+    "loc.puertoguanta.addr":
+      "Edf Núm 6, calle B, Manzana G, Urbanización Las Palmas, Guanta, Estado Anzoátegui",
 
     "footer.address":
       "Dirección: Av Francisco de Miranda, Torre Parque Cristal, Los Palos Grandes, Caracas, Venezuela",
@@ -70,8 +85,7 @@ const i18n = {
     "hero.title3": "INTEGRATED INTERNATIONAL TRADE",
 
     "about.ghost": "ABOUT",
-    "about.title":
-      '<span class="title-small">ABOUT</span>\n<span class="title-large">US</span>',
+    "about.title": '<span class="title-large">ABOUT US</span>',
     "about.p1":
       "We are a company founded in 1971 with national and international reach in comprehensive logistics, with branches at the main ports and airports of the country.",
     "about.p2":
@@ -100,6 +114,21 @@ const i18n = {
     "loc.puertocabello": "PUERTO CABELLO",
     "loc.puertocabello.addr":
       "Edif Distribuidora Madeira, calle Puerto Cabello, Piso 2 No. 2, Parroquia Juan José Flores, CP 2050",
+    "loc.puertosucre": "PUERTO SUCRE",
+    "loc.puertosucre.addr":
+      "Edificio administrativo Rio Manzanares, PB, Puerto Pesquero de Cumaná, Cumana; Estado Sucre. CP 6101",
+    "loc.puertoguiria": "PUERTO GÜIRIA",
+    "loc.puertoguiria.addr":
+      "Calle Bolívar, Edificio Don Antonio, Local 01, Sector Centro, Güiria, Estado Sucre.",
+    "loc.sanantonio": "SAN ANTONIO",
+    "loc.sanantonio.addr":
+      "Carrera 6 entre calle 3 y 4 Nº 3-35 Edificio K&G, Piso 1, Ofic 101, Barrio Lagunitas, San Antonio, Edo Táchira, CP 5007.",
+    "loc.maracaibo": "MARACAIBO",
+    "loc.maracaibo.addr":
+      "Av. 4 Edf Paulina Pierina, PB, Sector Bella Vista, Maracaibo, Estado Zulia, CP 4002.",
+    "loc.puertoguanta": "PUERTO GUANTA",
+    "loc.puertoguanta.addr":
+      "Edf Núm 6, calle B, Manzana G, Urbanización Las Palmas, Guanta, Estado Anzoátegui",
 
     "footer.address":
       "Dirección: Av Francisco de Miranda, Torre Parque Cristal, Los Palos Grandes, Caracas, Venezuela",
@@ -280,7 +309,7 @@ document
     const email = document.getElementById("femail").value;
     const message = document.getElementById("fmessage").value;
 
-    const formattedMessage = message.replace(/\n/g, '<br>');
+    const formattedMessage = message.replace(/\n/g, "<br>");
     // Plantilla HTML con los datos del formulario, usando tablas para máxima compatibilidad
     const htmlBody = `
     <!DOCTYPE html>
@@ -414,7 +443,7 @@ document
       if (response.ok || response.status === 201) {
         const label = currentLang === "es" ? "¡Enviado! ✓" : "Sent! ✓";
         btn.textContent = label;
-        btn.style.background = "#1a7a4a";
+        btn.style.background = "#0d2942";
         btn.style.opacity = "1";
         this.reset();
 

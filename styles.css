@@ -632,13 +632,15 @@ ul {
 .locations-container {
   position: relative;
   z-index: 1;
-  max-width: 1100px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 48px;
 }
 
 .locations-swiper {
-  overflow: visible;
+  overflow: hidden;
+  padding: 40px 24px;
+  margin: -40px -24px;
 }
 
 .location-card {
@@ -714,6 +716,7 @@ ul {
   font-weight: 700;
   color: var(--navy);
   max-width: 250px;
+  text-align: center;
 }
 
 /* Swiper nav for locations */
@@ -734,10 +737,10 @@ ul {
   font-weight: 900;
 }
 .swiper-button-prev.loc-prev {
-  left: -18px;
+  left: 6px;
 }
 .swiper-button-next.loc-next {
-  right: -18px;
+  right: 6px;
 }
 
 /* ---------- Footer ---------- */

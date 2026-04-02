@@ -69,7 +69,7 @@ const i18n = {
       "Dirección: Av Francisco de Miranda, Torre Parque Cristal, Los Palos Grandes, Caracas, Venezuela",
     "footer.terms": "Team & Condition",
     "footer.privacy": "Privacy Policy",
-    "footer.copy": "© DMC Logistics All Rights Reserved",
+    "footer.copy": "© Despachos Molina C.A. RIF: J-070127350",
   },
   en: {
     "nav.home": "HOME",
@@ -131,10 +131,10 @@ const i18n = {
       "Edf Núm 6, calle B, Manzana G, Urbanización Las Palmas, Guanta, Estado Anzoátegui",
 
     "footer.address":
-      "Dirección: Av Francisco de Miranda, Torre Parque Cristal, Los Palos Grandes, Caracas, Venezuela",
+      "Address: Av Francisco de Miranda, Torre Parque Cristal, Los Palos Grandes, Caracas, Venezuela",
     "footer.terms": "Terms & Conditions",
     "footer.privacy": "Privacy Policy",
-    "footer.copy": "© DMC Logistics All Rights Reserved",
+    "footer.copy": "© Despachos Molina C.A. RIF: J-070127350",
   },
 };
 
@@ -183,7 +183,8 @@ const heroSwiper = new Swiper(".hero-swiper", {
 
 /* ---------- Locations Swiper ---------- */
 const locSwiper = new Swiper(".locations-swiper", {
-  loop: false,
+  loop: true,
+  centeredSlides: true,
   slidesPerView: 1,
   spaceBetween: 24,
   navigation: {

@@ -413,7 +413,7 @@ ul {
 }
 
 .about-text {
-  flex: 0.65;
+  flex: 0.5;
 }
 .about-text p {
   color: var(--navy);
@@ -421,6 +421,7 @@ ul {
   margin-bottom: 18px;
   font-size: 1.2rem;
   font-weight: 700;
+  text-align: justify;
 }
 
 .about-image {
@@ -433,7 +434,7 @@ ul {
 }
 .about-img-bg {
   position: absolute;
-  top: -13px;
+  top: 70px;
   transform: rotate(333deg);
   z-index: 0;
   width: 690px;
@@ -875,9 +876,9 @@ ul {
   .about-img-bg {
     width: 500px;
   }
-  .about-text {
-    flex: 0.6;
-  }
+  /*   .about-text {
+    flex: 0.5;
+  } */
 }
 
 @media (max-width: 1024px) {

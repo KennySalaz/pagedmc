@@ -24,15 +24,20 @@ const i18n = {
     "about.p1":
       "Somos una empresa fundada en 1971 con alcance nacional e internacional en logística integral, con sucursales en los principales puertos y aeropuertos del país.",
     "about.p2":
-      "Nuestra mayor fortaleza son nuestros colaboradores cuya trayectoria, experiencia y actitud de servicio nos capacita para brindarle al cliente una asesoría que en conjunto nos permita desarrollar e implementar propuestas de valor que se adapten a las necesidades de cada negocio para el alcance de tres objetivos estratégicos: Eficiencia, Lead time y Rentabilidad.",
+      "Conformamos un equipo de colaboradores donde nuestra fortaleza es la trayectoria, experiencia y actitud de servicio que nos capacita para brindarle al cliente una asesoría que en conjunto nos permite desarrollar e implementar propuestas de valor que se adapten a las necesidades de cada negocio asegurando la eficiencia, el Lead time y la rentabilidad de las operaciones.",
+    "about.p3":
+      "Contamos con autorizaciones para operar como agentes de aduana y consolidador de carga en las principales aduanas del País",
 
     "services.ghost": "SERVICIOS",
     "services.title": "SERVICIOS",
-    "services.s1": "Agenciamiento aduanal a nivel nacional.",
-    "services.s2": "Logística de importación y exportación.",
-    "services.s3": "Logística integral de comercio internacional.",
-    "services.s4":
-      "Asesoría en clasificación arancelaria, valoración y regímenes legales.",
+    "services.s1": "Logística integral de comercio internacional.",
+    "services.s2": "Transporte de carga aérea, marítimo y terrestre.",
+    "services.s3": "Consolidación de carga y almacenaje.",
+    "services.s4": "Agenciamiento aduanal a nivel nacional.",
+    "services.s5": "Asesoría en valoración y clasificación arancelaria.",
+    "services.s6": "Tramitación de regímenes aduaneros especiales y otros.",
+    "services.s7": "Transporte terrestre estándar y sobredimensionado.",
+    "services.s8": "Esquemas de seguridad para el transporte de mercancías vía terrestre.",
 
     "contact.title": "¡CONTÁCTANOS!",
     "contact.name": "Nombre y Apellido",
@@ -89,15 +94,20 @@ const i18n = {
     "about.p1":
       "We are a company founded in 1971 with national and international reach in comprehensive logistics, with branches at the main ports and airports of the country.",
     "about.p2":
-      "Our greatest strength is our team of employees whose experience and service attitude enables us to offer each client comprehensive advisory services to develop and implement value proposals tailored to every business, targeting three strategic goals: Efficiency, Lead time and Profitability.",
+      "We form a team of collaborators where our strength is the trajectory, experience, and service attitude that enables us to offer each client advisory services that together allow us to develop and implement value proposals tailored to the needs of each business, ensuring efficiency, lead time, and profitability in operations.",
+    "about.p3":
+      "We have authorizations to operate as customs agents and freight consolidators in the main customs offices of the country.",
 
     "services.ghost": "SERVICES",
     "services.title": "SERVICES",
-    "services.s1": "National customs agency services.",
-    "services.s2": "Import and export logistics.",
-    "services.s3": "Comprehensive international trade logistics.",
-    "services.s4":
-      "Advisory on tariff classification, valuation and legal regimes.",
+    "services.s1": "Comprehensive international trade logistics.",
+    "services.s2": "Air, sea, and land freight transport.",
+    "services.s3": "Freight consolidation and warehousing.",
+    "services.s4": "National customs agency services.",
+    "services.s5": "Advisory on valuation and tariff classification.",
+    "services.s6": "Processing of special customs regimes and others.",
+    "services.s7": "Standard and oversized land transport.",
+    "services.s8": "Security schemes for land transport of goods.",
 
     "contact.title": "CONTACT US!",
     "contact.name": "Full Name",

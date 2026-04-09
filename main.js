@@ -16,7 +16,7 @@ const i18n = {
     "hero.tag2": "Delivery",
     "hero.title2": "LOGÍSTICA DE IMPORTACIÓN Y EXPORTACIÓN",
     "hero.tag3": "Management",
-    "hero.title3": "COMERCIO INTERNACIONAL INTEGRADO",
+    "hero.title3": "AGENTES DE\nADUANA y CONSOLIDADORES DE\nCARGA",
 
     "about.ghost": "NOSOTROS",
     "about.title":
@@ -57,7 +57,7 @@ const i18n = {
     "loc.puertosucre": "PUERTO SUCRE",
     "loc.puertosucre.addr":
       "Edificio administrativo Rio Manzanares, PB, Puerto Pesquero de Cumaná, Cumana; Estado Sucre. CP 6101",
-    "loc.puertoguiria": "PUERTO GÜIRIA",
+    "loc.puertoguiria": "GÜIRIA",
     "loc.puertoguiria.addr":
       "Calle Bolívar, Edificio Don Antonio, Local 01, Sector Centro, Güiria, Estado Sucre.",
     "loc.sanantonio": "SAN ANTONIO",
@@ -66,7 +66,7 @@ const i18n = {
     "loc.maracaibo": "MARACAIBO",
     "loc.maracaibo.addr":
       "Av. 4 Edf Paulina Pierina, PB, Sector Bella Vista, Maracaibo, Estado Zulia, CP 4002.",
-    "loc.puertoguanta": "PUERTO GUANTA",
+    "loc.puertoguanta": "GUANTA",
     "loc.puertoguanta.addr":
       "Edf Núm 6, calle B, Manzana G, Urbanización Las Palmas, Guanta, Estado Anzoátegui",
 
@@ -87,7 +87,7 @@ const i18n = {
     "hero.tag2": "Delivery",
     "hero.title2": "IMPORT & EXPORT LOGISTICS",
     "hero.tag3": "Management",
-    "hero.title3": "INTEGRATED INTERNATIONAL TRADE",
+    "hero.title3": "CUSTOMS AGENTS &\nFREIGHT CONSOLIDATORS",
 
     "about.ghost": "ABOUT",
     "about.title": '<span class="title-large">ABOUT US</span>',
@@ -127,7 +127,7 @@ const i18n = {
     "loc.puertosucre": "PUERTO SUCRE",
     "loc.puertosucre.addr":
       "Edificio administrativo Rio Manzanares, PB, Puerto Pesquero de Cumaná, Cumana; Estado Sucre. CP 6101",
-    "loc.puertoguiria": "PUERTO GÜIRIA",
+    "loc.puertoguiria": "GÜIRIA",
     "loc.puertoguiria.addr":
       "Calle Bolívar, Edificio Don Antonio, Local 01, Sector Centro, Güiria, Estado Sucre.",
     "loc.sanantonio": "SAN ANTONIO",
@@ -136,7 +136,7 @@ const i18n = {
     "loc.maracaibo": "MARACAIBO",
     "loc.maracaibo.addr":
       "Av. 4 Edf Paulina Pierina, PB, Sector Bella Vista, Maracaibo, Estado Zulia, CP 4002.",
-    "loc.puertoguanta": "PUERTO GUANTA",
+    "loc.puertoguanta": "GUANTA",
     "loc.puertoguanta.addr":
       "Edf Núm 6, calle B, Manzana G, Urbanización Las Palmas, Guanta, Estado Anzoátegui",
 
@@ -147,6 +147,10 @@ const i18n = {
     "footer.copy": "© Despachos Molina C.A. RIF: J-070127350",
   },
 };
+
+/* ---------- SVG Flag Assets ---------- */
+const FLAG_ES = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480"><path fill="#ad1519" d="M0 0h640v120H0z"/><path fill="#fac917" d="M0 120h640v240H0z"/><path fill="#ad1519" d="M0 360h640v120H0z"/><g transform="translate(100 180) scale(1.2)"><path d="M0 0v100c0 15 11 27 25 30l25 15 25-15c14-3 25-15 25-30V0H0z" fill="#fac917" stroke="#ad1519" stroke-width="10"/><path d="M25 25h50v50H25z" fill="#ad1519"/></g></svg>`;
+const FLAG_EN = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480"><path fill="#bd3d44" d="M0 0h640v480H0z"/><path fill="#fff" d="M0 36.9h640v37H0zm0 73.8h640v37H0zm0 74h640v36.8H0zm0 73.8h640v37H0zm0 73.9h640v37H0zm0 74h640v36.8H0z"/><path fill="#192f5d" d="M0 0h320v258.5H0z"/><path fill="#fff" d="M37.3 35.1l-6.4 19.8 16.9-12.2H26.8l16.9 12.2zm71.1 0l-6.4 19.8 16.9-12.2H97.9l16.9 12.2zm71.1 0l-6.4 19.8 16.9-12.2h-21.1l16.9 12.2zm71.1 0l-6.4 19.8 16.9-12.2h-21.1l16.9 12.2zm-177.8 73.8l-6.4 19.8 16.9-12.2H62.4l16.9 12.2zm71.1 0l-6.4 19.8 16.9-12.2h-21.1l16.9 12.2zm71.1 0l-6.4 19.8 16.9-12.2h-21.1l16.9 12.2zm71.2 0l-6.4 19.8 16.9-12.2h-21.1l16.9 12.2zm-177.8 73.9l-6.4 19.8 16.9-12.2h-21.1l16.9 12.2zm71.1 0l-6.4 19.8 16.9-12.2h-21.1l16.9 12.2zm71.1 0l-6.4 19.8 16.9-12.2h-21.1l16.9 12.2zm71.2 0l-6.4 19.8 16.9-12.2h-21.1l16.9 12.2z"/></svg>`;
 
 /* ---------- Language ---------- */
 let currentLang = "es";
@@ -171,14 +175,15 @@ function applyTranslations(lang) {
 
 function toggleLang() {
   currentLang = currentLang === "es" ? "en" : "es";
-  document.getElementById("langFlag").textContent =
-    currentLang === "es" ? "🇪🇸" : "🇺🇸";
+  document.getElementById("langFlag").innerHTML =
+    currentLang === "es" ? FLAG_ES : FLAG_EN;
   document.getElementById("langCode").textContent = currentLang.toUpperCase();
   document.documentElement.lang = currentLang;
   applyTranslations(currentLang);
 }
 
 document.getElementById("langToggle").addEventListener("click", toggleLang);
+document.getElementById("langFlag").innerHTML = FLAG_ES; // initial
 applyTranslations("es"); // default
 
 /* ---------- Hero Swiper ---------- */

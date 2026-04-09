@@ -200,15 +200,15 @@ const heroSwiper = new Swiper(".hero-swiper", {
 const locSwiper = new Swiper(".locations-swiper", {
   loop: true,
   centeredSlides: true,
-  slidesPerView: 1,
-  spaceBetween: 24,
+  slidesPerView: 1.2,
+  spaceBetween: 20,
   navigation: {
     nextEl: ".loc-next",
     prevEl: ".loc-prev",
   },
   breakpoints: {
-    600: { slidesPerView: 2 },
-    900: { slidesPerView: 3 },
+    640: { slidesPerView: 2 },
+    1024: { slidesPerView: 3, spaceBetween: 30 },
   },
 });
 

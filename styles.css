@@ -660,16 +660,16 @@ ul {
 }
 .locations-container {
   position: relative;
-  z-index: 1;
-  max-width: 1200px;
+  z-index: 10;
+  max-width: 1400px;
   margin: 0 auto;
-  padding: 0 48px;
+  padding: 0 100px;
+  overflow: visible; /* Prevent clipping of navigation buttons */
 }
 
 .locations-swiper {
   overflow: hidden;
-  padding: 40px 24px;
-  margin: -40px -24px;
+  padding: 40px 0;
 }
 
 .location-card {
@@ -751,25 +751,116 @@ ul {
 /* Swiper nav for locations */
 .swiper-button-prev.loc-prev,
 .swiper-button-next.loc-next {
-  width: 38px;
-  height: 38px;
+  width: 44px;
+  height: 44px;
   border-radius: 50%;
   background: var(--white);
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
   color: var(--navy);
   top: 50%;
   transform: translateY(-50%);
+  transition: all 0.3s ease;
+  z-index: 100;
+  border: 1px solid rgba(0, 0, 0, 0.05);
 }
+
+.swiper-button-prev.loc-prev:hover,
+.swiper-button-next.loc-next:hover {
+  background: var(--navy);
+  color: var(--white);
+  transform: translateY(-50%) scale(1.1);
+}
+
+/* Remove default Swiper icon */
 .swiper-button-prev.loc-prev::after,
 .swiper-button-next.loc-next::after {
-  font-size: 0.85rem;
-  font-weight: 900;
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-left: 2.5px solid currentColor;
+  border-bottom: 2.5px solid currentColor;
 }
+
+.swiper-button-prev.loc-prev::after {
+  transform: rotate(45deg);
+  margin-left: 4px;
+}
+
+.swiper-button-next.loc-next::after {
+  transform: rotate(-135deg);
+  margin-right: 4px;
+}
+
 .swiper-button-prev.loc-prev {
-  left: 6px;
+  left: 40px;
 }
 .swiper-button-next.loc-next {
-  right: 6px;
+  right: 40px;
+}
+
+/* Adjust for larger screens to stay near the container */
+@media (min-width: 1600px) {
+  .swiper-button-prev.loc-prev {
+    left: calc(50% - 760px);
+  }
+  .swiper-button-next.loc-next {
+    right: calc(50% - 760px);
+  }
+}
+
+@media (max-width: 1024px) {
+  .swiper-button-prev.loc-prev {
+    left: 20px;
+  }
+  .swiper-button-next.loc-next {
+    right: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .swiper-button-prev.loc-prev,
+  .swiper-button-next.loc-next {
+    width: 36px;
+    height: 36px;
+    display: none; /* Often arrows are better hidden on mobile carousels with swipe */
+  }
+}
+
+/* Responsive adjustments for arrows */
+@media (max-width: 1400px) {
+  .locations-container {
+    padding: 0 80px;
+  }
+  .swiper-button-prev.loc-prev {
+    left: 20px;
+  }
+  .swiper-button-next.loc-next {
+    right: 20px;
+  }
+}
+
+@media (max-width: 900px) {
+  .locations-container {
+    padding: 0 70px;
+  }
+}
+
+@media (max-width: 600px) {
+  .locations-container {
+    padding: 0 45px;
+  }
+  .swiper-button-prev.loc-prev {
+    left: 10px;
+  }
+  .swiper-button-next.loc-next {
+    right: 10px;
+  }
+  .swiper-button-prev.loc-prev,
+  .swiper-button-next.loc-next {
+    width: 32px;
+    height: 32px;
+  }
 }
 
 /* ---------- Footer ---------- */

@@ -10,6 +10,7 @@ const i18n = {
     "nav.about": "SOBRE NOSOTROS",
     "nav.services": "SERVICIOS",
     "nav.contact": "CONTACTO",
+    "nav.offices": "OFICINAS",
 
     "hero.tag": "Logistics",
     "hero.title": "ASESORÍA LOGÍSTICA INTEGRAL",
@@ -81,6 +82,7 @@ const i18n = {
     "nav.about": "ABOUT US",
     "nav.services": "SERVICES",
     "nav.contact": "CONTACT",
+    "nav.offices": "OFFICES",
 
     "hero.tag": "Logistics",
     "hero.title": "COMPREHENSIVE LOGISTICS CONSULTING",

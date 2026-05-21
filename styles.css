@@ -124,6 +124,18 @@ ul {
   object-fit: contain;
 }
 
+@media (min-width: 768px) {
+  .logo-img {
+    height: 50px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .logo-img {
+    height: 60px;
+  }
+}
+
 .nav-links {
   display: flex;
   align-items: center;
